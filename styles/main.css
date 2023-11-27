@@ -383,7 +383,7 @@ textarea {
   border: 2px solid green;
 }
 
-.h4 input:required, textarea:required {
+.h4 #input1:required, #input2:required, textarea:required {
   background-color: lightblue;
 }
 
