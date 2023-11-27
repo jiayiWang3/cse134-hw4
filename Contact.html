@@ -67,23 +67,31 @@
         </form>
 
 
-        <form action="https://httpbin.org/post" method="POST">
-            <fieldset>
-                <legend>Contact Us</legend>
-
+        <form class="hw4" action="https://httpbin.org/post" method="post" class="contact-form">
+            <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
+                <output name="nameError" class="error"></output>
+            </div>
     
+            <div class="form-group">
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
+                <output name="emailError" class="error"></output>
+            </div>
     
+            <div class="form-group">
                 <label for="comments">Comments:</label>
                 <textarea id="comments" name="comments" required></textarea>
+                <output name="commentsError" class="error"></output>
+            </div>
     
-                <input type="hidden" name="possible_bot" value="true">
+            <input type="hidden" name="possible_bot" value="true">
     
+            <div class="form-group">
                 <button type="submit">Submit</button>
-            </fieldset>
+                <output name="infoMessage" class="info"></output>
+            </div>
         </form>
 
     </main>
