@@ -384,7 +384,7 @@ textarea {
 }
 
 .h4 input:required, textarea:required {
-  background-color: #fff4f4;
+  background-color: lightblue;
 }
 
 .h4 input:focus, textarea:focus {
