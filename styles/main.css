@@ -319,15 +319,47 @@ footer {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 } */
 
+
+
+.hw4 {
+  display: grid;
+  gap: 10px;
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 .hw4 .form-group {
   display: flex;
   flex-direction: column;
 }
 
-.hw4 textarea {
+.hw4 input[type="text"],
+input[type="email"],
+textarea {
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+
+.hw4 .output-group {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8em;
+}
+
+.hw4 .error {
+  color: red;
+  flex: 1;
+  text-align: left;
+  margin-right: 10px;
+}
+
+.hw4 .info {
+  color: green;
+  flex: 1;
+  text-align: right;
 }
 
 .hw4 button {
@@ -341,14 +373,4 @@ footer {
 
 .hw4 button:hover {
   background-color: #0056b3;
-}
-
-.hw4 .error {
-  color: red;
-  font-size: 0.8em;
-}
-
-.hw4 .info {
-  color: green;
-  font-size: 0.8em;
 }
