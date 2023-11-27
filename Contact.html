@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/main.css" rel="stylesheet" />
+    <title>Contact</title>
+</head>
+<body>
+    <nav class="sticky">
+        <ul class="main-nav">
+            <li><a href="/index.html">Home Page</a></li>
+            <li><a href="/Bio.html">Bio</a></li>
+            <li><a href="/Projects.html">Projects</a></li>
+            <li><a href="/Interest.html">Interests</a></li>
+            <li><a href="/Contact.html" class="nav-highlight">Contact Info</a></li>
+        </ul>
+    </nav>
+    <main class="contact_page">
+        <h2>Contact Info</h2>
+
+        <form action="/submit">
+            <fieldset>
+                <legend>User Info</legend>
+                <label for="fname">name:
+                    <input type="text" id="fname" name = "firstname">
+                </label>
+                <label for="email">email：
+                    <input type="email" id="email" name="email">
+                </label>
+            </fieldset>
+            <br>
+            <br>
+            <fieldset>
+                <legend>FeedBack</legend>
+                <label for="topic">What you want to say about my website or me：
+                    <input list="topics" id="topic" name="topic">
+                    <datalist id="topics">
+                        <option value="bio">
+                        <option value="projects">
+                        <option value="interest">
+                        <option value="others">
+                    </datalist>
+                </label>
+                <br>
+                <label for="message">Please describe in detail：
+                    <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                </label>
+                <br>
+                <label for="feedback">feedback：
+                    <select id="feedback" name="feedback">
+                        <optgroup label = "feedback">
+                            <option value="good">good</option>
+                            <option value="medium">medium</option>
+                            <option value="bad">bad</option>
+                        </optgroup>
+    
+                    </select>
+                </label>
+                <br>
+                <button type="submit">Submit</button>
+            </fieldset>
+            <details>
+                <summary>How to give positive feedback</summary>
+                <p>Please desribe your opinions in detail. For example, which part you are most interested in, which part requires improvments.</p>
+            </details>
+        </form>
+
+    </main>
+    <footer>
+		<p>💯This page was made with &hearts; by Jiayi Wang 💯</p>
+	</footer>
+</body>
+</html>
