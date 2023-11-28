@@ -19,10 +19,6 @@
     </nav>
     <main class="contact_page">
         <h2>Contact Info</h2>
-        <button id="theme-toggle">Toggle Theme</button>
-    
-
-
         <form action="https://httpbin.org/post" method="post" id="hw4_form">
             <div class="hw4_formfield">
                 <label for="hw4_name">Name:</label>
@@ -41,7 +37,7 @@
                     minlength="3" maxlength="100" placeholder="enter your email"
                     required>
                 <div class="hw4_Info_Error">
-                    <output id="hw4_email_error" name="emailError" class="hw4_error">error-message-if-any</output>
+                    <output name="emailError" class="hw4_error">error-message-if-any</output>
                     <output name="emailInfo" class="hw4_info">info-message-if-any</output>
                 </div>
             </div>
@@ -49,11 +45,13 @@
             <div class="hw4_formfield">
                 <label for="hw4_comments">Comments:</label>
                 <textarea id="hw4_comments" name="hw4_comments" 
-                    minlength="1" maxlength="300" required
-                    pattern="^[A-Za-z]+$"></textarea>
+                    minlength="1" maxlength="300" 
+                    pattern="[-A-Za-z0-9\s\.,!?'&quot;:\–\—()$%&]*"
+                    required>
+                </textarea>
                 <div class="hw4_Info_Error">
-                    <output id="hw4_test_error" name="commentsError" class="hw4_error"></output>
-                    <output id="hw4_comments_info" name="commentsInfo" class="hw4_info" ></output>
+                    <output id="hw4_test_error" name="commentsError" class="hw4_error">error-message-if-any</output>
+                    <output name="commentsInfo" class="hw4_info">should not include non-typical characters</output>
                 </div>
 
             </div>
@@ -64,13 +62,10 @@
                 <button type="submit">Submit</button>
             </div>
         </form>
-
     </main>
     <footer>
 		<p>💯This page was made with &hearts; by Jiayi Wang 💯</p>
 	</footer>
 </body>
-<script src="scripts/hw4.js"></script>
-
 
 </html>

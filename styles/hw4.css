@@ -1,0 +1,109 @@
+
+
+#hw4_form {
+    display: flex;
+    flex-direction: column;
+    height: calc(50rem - 40vw);
+    min-height: 30rem;
+    max-height: calc(100vh - 15rem);
+    margin-top: 1rem;
+}
+
+.hw4_formfield {
+    padding: 0.5rem 0.7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.hw4_formfield label {
+    font-weight: bold;
+  }
+
+
+
+.hw4_Info_Error {
+   padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hw4_Info_Error .hw4_error {
+    color: black;
+}
+
+.hw4_Info_Error .hw4_info {
+    color: black;
+} 
+
+/**/
+  
+  #contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: calc(50rem - 40vw);
+    min-height: 30rem;
+    max-height: calc(100vh - 15rem);
+    margin-top: 1rem;
+  }
+  
+  form-field {
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  
+  .hw4__contactOutput {
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .hw4__contactOutput__error {
+    color: var(--layout-error-color, red);
+    opacity: 1;
+    transition: opacity 350ms ease-in-out;
+  }
+  
+  .hw4__contactOutput__info {
+    color: var(--layout-secondary-text-color, gray);
+  }
+  
+
+  #hw4_test_error {
+    color: red;
+    opacity: 1;
+    transition: opacity 2s ease-out;
+  }
+
+  .flash {
+    color: red;
+    animation: flashAnimation 1s;
+}
+
+@keyframes flashAnimation {
+    50% { background-color: red; }
+}
+
+.num_count_error {
+  color: red;
+}
+
+.character_error {
+  color: red;
+}
+
+:root {
+  --background-color: #fff; 
+  --text-color: #000;      
+}
+
+body.dark-mode {
+  --background-color: #333; 
+  --text-color: #fff;      
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
