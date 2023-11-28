@@ -44,7 +44,7 @@ var email_ = document.getElementById("hw4_email");
 
 email_.addEventListener("input", function (event) {
   if (email_.validity.typeMismatch) {
-    // email_.setCustomValidity("Please input a valid email");
+    email_.setCustomValidity("Please input a valid email: format: xxx@xxx");
     addFormError('email_error', 'The input is not an valid email format.');
   } else if (email_.validity.tooShort) {
     email_.setCustomValidity("The length should larger than 3!");
