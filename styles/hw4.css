@@ -1,9 +1,24 @@
 :root {
   /* 默认模式下的颜色 */
+  --background-color: #fff; 
+  --text-color: #000;   
   --red-text-color: red;
   /* 其他颜色变量 */
   --black-text-color: black;
 }
+
+
+body.dark-mode {
+  --background-color: #333; 
+  --text-color: #fff;  
+  --red-text-color: blue;  
+  --black-text-color: white;  
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+} 
 
 
 
@@ -100,22 +115,7 @@
   color: red;
 }
 
-:root {
-  --background-color: #fff; 
-  --text-color: #000;      
-}
 
-body.dark-mode {
-  --background-color: #333; 
-  --text-color: #fff;  
-  --red-text-color: blue;  
-  --black-text-color: white;  
-}
-
-body {
-  background-color: var(--background-color);
-  color: var(--text-color);
-} 
 
 .num_count_error {
   color: red;
