@@ -1,3 +1,9 @@
+:root {
+  /* 默认模式下的颜色 */
+  --red-text-color: red;
+  /* 其他颜色变量 */
+}
+
 
 
 #hw4_form {
@@ -100,10 +106,19 @@
 
 body.dark-mode {
   --background-color: #333; 
-  --text-color: #fff;      
+  --text-color: #fff;  
+  --red-text-color: blue;    
 }
 
 body {
   background-color: var(--background-color);
   color: var(--text-color);
+} 
+
+.num_count_error {
+  color: red;
+}
+
+.character_error {
+  color: red;
 }
