@@ -2,6 +2,7 @@
   /* 默认模式下的颜色 */
   --red-text-color: red;
   /* 其他颜色变量 */
+  --black-text-color: black;
 }
 
 
@@ -107,7 +108,8 @@
 body.dark-mode {
   --background-color: #333; 
   --text-color: #fff;  
-  --red-text-color: blue;    
+  --red-text-color: blue;  
+  --black-text-color: white;  
 }
 
 body {
